@@ -8,7 +8,7 @@ let angkaKedua = "";
 let operator = "";
 let sedangMengisiAngkaKedua = false;
 
-// Menampilkan angka yang sedang dimasukkan
+
 function tampilkanAngka() {
     if (sedangMengisiAngkaKedua) {
         hasil.textContent =angkaPertama + " " + operator + " " + angkaKedua;
@@ -17,7 +17,7 @@ function tampilkanAngka() {
     }
 }
 
-// Ketika tombol angka ditekan
+
 tombolAngka.forEach(function(tombol) {
     tombol.addEventListener("click", function() {
         const angka = tombol.textContent;
@@ -32,7 +32,7 @@ tombolAngka.forEach(function(tombol) {
     });
 });
 
-// Ketika tombol operator ditekan
+
 tombolOperator.forEach(function(tombol) {
     tombol.addEventListener("click", function() {
         const simbol = tombol.textContent.trim();
